@@ -1,0 +1,75 @@
+{
+  "taxonomy_fingerprint": "d6b0e82f9b10",
+  "pairs": 3500,
+  "pairs_by_split": {
+    "test": 2807,
+    "dev": 693
+  },
+  "classes": {
+    "variable_misuse": 1037,
+    "negation": 404,
+    "argument_swap": 367,
+    "boundary_shift": 343,
+    "comparison_op": 273,
+    "wrong_return": 246,
+    "arithmetic_op": 222,
+    "type_conversion": 199,
+    "none_guard_omission": 192,
+    "boolean_op": 143,
+    "other": 74
+  },
+  "locations": {
+    "call_arg": 1185,
+    "condition": 949,
+    "statement": 628,
+    "return": 600,
+    "loop_header": 64
+  },
+  "sources": {
+    "pypibugs": 1766,
+    "tssb": 1734
+  },
+  "classes_by_source": {
+    "pypibugs": {
+      "variable_misuse": 873,
+      "negation": 240,
+      "argument_swap": 219,
+      "boundary_shift": 154,
+      "comparison_op": 98,
+      "arithmetic_op": 70,
+      "other": 63,
+      "boolean_op": 49
+    },
+    "tssb": {
+      "wrong_return": 246,
+      "type_conversion": 199,
+      "none_guard_omission": 192,
+      "boundary_shift": 189,
+      "comparison_op": 175,
+      "negation": 164,
+      "variable_misuse": 164,
+      "arithmetic_op": 152,
+      "argument_swap": 148,
+      "boolean_op": 94,
+      "other": 11
+    }
+  },
+  "dropped": {
+    "tssb:unparsable": 1106,
+    "tssb:duplicate": 574,
+    "tssb:unavailable": 352,
+    "pypibugs:too_long": 314,
+    "pypibugs:unavailable": 250,
+    "tssb:too_long": 226,
+    "pypibugs:duplicate": 56,
+    "pypibugs:outside_function": 49,
+    "tssb:outside_function": 8,
+    "pypibugs:unparsable": 1,
+    "near_duplicate_of_corpus": 0
+  },
+  "corpus_dedup_checked": true,
+  "sha256": {
+    "dev": "ef69b692199dae05c8c00a27097259e4e001c706349dcc8f6711874223d2edb5",
+    "test": "9760950be728b376eff839cc439aa374cdec79407a340d31e96769828e9d4efb"
+  }
+}

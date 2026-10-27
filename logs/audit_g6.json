@@ -1,0 +1,36 @@
+{
+  "candidates_reaching_G6": 952,
+  "run1_outcomes": {
+    "failing_tests": 820,
+    "all_passed": 117,
+    "timeout": 8,
+    "error_on_load": 7
+  },
+  "run2_outcomes": {
+    "failing_tests": 822,
+    "all_passed": 116,
+    "timeout": 7,
+    "error_on_load": 7
+  },
+  "verdict_agreement": 0.9989495798319328,
+  "flipped": [
+    {
+      "function": "Filter_25248_I",
+      "run1": "all_passed",
+      "run2": "failing_tests"
+    }
+  ],
+  "failing_tests_per_accepted_mutant": {
+    "1": 84,
+    "2": 98,
+    "3": 138,
+    "4": 152,
+    "5": 155,
+    "6": 111,
+    "7": 51,
+    "8": 24,
+    "9": 5,
+    "10": 1,
+    "11": 1
+  }
+}

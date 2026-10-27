@@ -1,0 +1,55 @@
+2628 gated warmup examples from 3000 functions
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  90%|████████▉ | 303/338 [00:00<00:00, 3020.32it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 3112.32it/s]
+  sft step 10: loss 0.3205
+  sft step 20: loss 0.2017
+  sft step 30: loss 0.1641
+  sft step 40: loss 0.1617
+  sft step 50: loss 0.1495
+  sft step 60: loss 0.1489
+  sft step 70: loss 0.1383
+[W1006 21:39:48.774682087 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 178257920 bytes (free: 120520704, total: 23661248512).
+  sft step 80: loss 0.1492
+  sft step 90: loss 0.1291
+  sft step 100: loss 0.1296
+  sft step 110: loss 0.1191
+[W1006 21:44:27.215754716 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 195035136 bytes (free: 133103616, total: 23661248512).
+  sft step 120: loss 0.1203
+  sft step 130: loss 0.1198
+  sft step 140: loss 0.1289
+  sft step 150: loss 0.1058
+  sft step 160: loss 0.1167
+{
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "taxonomy_fingerprint": "d6b0e82f9b10",
+  "functions": 3000,
+  "examples": 2628,
+  "classes": {
+    "negation": 324,
+    "wrong_return": 321,
+    "variable_misuse": 319,
+    "arithmetic_op": 311,
+    "boolean_op": 272,
+    "comparison_op": 267,
+    "boundary_shift": 264,
+    "argument_swap": 259,
+    "type_conversion": 251,
+    "none_guard_omission": 40
+  },
+  "lr": 0.0001,
+  "epochs": 1,
+  "loss_first": [
+    0.5893751829862595,
+    0.397792749106884,
+    0.32631993293762207,
+    0.3221268728375435,
+    0.2812882699072361
+  ],
+  "loss_last": [
+    0.132416064850986,
+    0.11315389536321163,
+    0.11651901993900537,
+    0.11687289737164974,
+    0.10690423846244812
+  ],
+  "adapter": "runs/warmup_injector/injector"
+}

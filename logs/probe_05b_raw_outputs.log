@@ -1,0 +1,11 @@
+0 {'real_dev/format_failure': 1.0, 'real_dev/accuracy': 0.0, 'synthetic_val/format_failure': 1.0, 'synthetic_val/accuracy': 0.0} det fmt fail (train): nan
+2 {'real_dev/format_failure': 1.0, 'real_dev/accuracy': 0.0, 'synthetic_val/format_failure': 1.0, 'synthetic_val/accuracy': 0.0} det fmt fail (train): 0.75
+5 {'real_dev/format_failure': 0.9, 'real_dev/accuracy': 0.05, 'synthetic_val/format_failure': 0.967, 'synthetic_val/accuracy': 0.017} det fmt fail (train): 0.88
+injector parseable 2/12, detector parseable 2/12
+---- INJECTOR: '<type>Return Value Integer</type>\n<lines>4</lines>\n<int>0</int>'
+---- INJECTOR: '<type>Function</type>\n<lines>13, 13, 37</lines>\n<new>a function that finds the maximum length of a decreasing subsequence in a list</new>\n'
+---- DETECTOR: 'no_bug'
+---- DETECTOR: 'no_bug'
+---- DETECTOR: '<type>type_conversion</type>'
+
+[exited with code 0]

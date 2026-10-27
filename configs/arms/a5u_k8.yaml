@@ -1,0 +1,5 @@
+# A5 stationary-opponent control: A1-uniform with detector group K_D=8 (K_D=4 is a1_uniform itself).
+run_name: a5u_k8
+injector: {mode: uniform}
+pool: {enabled: false}
+detector: {group_size: 8, train_mutants: 32, train_clean: 8}

@@ -1,0 +1,42 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Secrets (API keys); keep a committed .env.example instead
+.env
+.env.*
+!.env.example
+
+# Large or regenerable data (rebuild with scripts/build_*.py; manifests record the hashes)
+data/raw/
+data/cache/
+data/*.log
+
+# Training output: adapters, checkpoints, per-run metrics and samples
+runs/
+wandb/
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+
+# Downloads
+*.zip
+*.tar
+*.tar.gz
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+*.swp

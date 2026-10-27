@@ -1,0 +1,4 @@
+# A1: injector frozen at step 0; the detector trains on its fresh samples (Tier 1).
+run_name: a1_frozen
+injector: {mode: frozen}
+pool: {enabled: false}

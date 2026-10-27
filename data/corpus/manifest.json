@@ -1,0 +1,51 @@
+{
+  "source": "KodCode/KodCode-V1 (refs/convert/parquet)",
+  "seed": 0,
+  "target": 25000,
+  "taxonomy_fingerprint": "d6b0e82f9b10",
+  "counts": {
+    "train": 24048,
+    "val": 952
+  },
+  "subsets": {
+    "kodcode/Filter": 6016,
+    "kodcode/Taco": 4270,
+    "kodcode/Prefill": 2179,
+    "kodcode/Leetcode": 2127,
+    "kodcode/Code_Contests": 2025,
+    "kodcode/Codeforces": 1942,
+    "kodcode/Algorithm": 1849,
+    "kodcode/Data_Structure": 1564,
+    "kodcode/Apps": 1229,
+    "kodcode/Evol": 680,
+    "kodcode/Package": 577,
+    "kodcode/Docs": 542
+  },
+  "stats": {
+    "rows": 484097,
+    "rejected": {
+      "top_level_statement": 84843,
+      "long_line": 15566,
+      "few_tests": 37850,
+      "length": 48941,
+      "syntax": 209,
+      "non_stdlib_import": 19119,
+      "function_count": 2638,
+      "test_import": 303,
+      "tests_too_long": 5,
+      "tabs": 1
+    },
+    "exact_duplicates": 106054,
+    "near_duplicates": 352,
+    "low_diversity": 1004,
+    "subset_capped": 0,
+    "failed_tests": 442,
+    "flaky": 9,
+    "kept": 25000
+  },
+  "sha256": {
+    "train": "9bd846675e526bdf380b3a5de1fdc892f3c92ffcb6532a88a0f71a2e4df4dd25",
+    "val": "289032befaca8fd4221b223d488ab0dbc4cb11a4b7727132895a98ea0b7eeef4"
+  },
+  "build_seconds": 579
+}

@@ -1,0 +1,6 @@
+# A5 stationary-opponent control: A1-uniform with detector group K_D=2.
+# Detector inputs per step scale as 160 / 80 / 40 / 20 so detector rollouts stay at 320 per step.
+run_name: a5u_k2
+injector: {mode: uniform}
+pool: {enabled: false}
+detector: {group_size: 2, train_mutants: 128, train_clean: 32}

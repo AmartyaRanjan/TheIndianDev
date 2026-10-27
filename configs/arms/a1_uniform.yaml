@@ -1,0 +1,4 @@
+# A1: no injector policy; mutations drawn uniformly by the AST engine and gated (Tier 1).
+run_name: a1_uniform
+injector: {mode: uniform}
+pool: {enabled: false}

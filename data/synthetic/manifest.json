@@ -1,0 +1,25 @@
+{
+  "taxonomy_fingerprint": "d6b0e82f9b10",
+  "functions": 952,
+  "mutants": 836,
+  "classes": {
+    "wrong_return": 103,
+    "negation": 101,
+    "variable_misuse": 100,
+    "arithmetic_op": 92,
+    "type_conversion": 87,
+    "boolean_op": 85,
+    "boundary_shift": 84,
+    "comparison_op": 84,
+    "argument_swap": 79,
+    "none_guard_omission": 21
+  },
+  "locations": {
+    "condition": 288,
+    "statement": 185,
+    "return": 182,
+    "call_arg": 123,
+    "loop_header": 58
+  },
+  "sha256": "352cde17c19bfd971b8d4490307559e4b9a506e44292d2f3a9a792445c96f357"
+}

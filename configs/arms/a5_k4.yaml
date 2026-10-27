@@ -1,0 +1,3 @@
+# A5 group-size sweep on the adversarial arm: injector group K=4, B*K held at 128 (Tier 2).
+run_name: a5_k4
+injector: {functions_per_step: 32, group_size: 4}

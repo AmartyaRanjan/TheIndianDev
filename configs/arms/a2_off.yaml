@@ -1,0 +1,4 @@
+# A2: no anti-collapse machinery (no diversity bonus, no checkpoint pools) (Tier 1).
+run_name: a2_off
+rewards: {lambda_div: 0.0}
+pool: {enabled: false}

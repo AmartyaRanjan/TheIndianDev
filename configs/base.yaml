@@ -1,0 +1,24 @@
+# Defaults for every arm (plan §5). Arm files in configs/arms/ override single keys.
+run_name: full
+seed: 0
+base_model: Qwen/Qwen2.5-Coder-1.5B-Instruct
+backend: vllm
+steps: 400
+corpus: data/corpus/train.jsonl
+synthetic_val: data/synthetic/val.jsonl
+real_dev: data/heldout/dev.jsonl
+out_dir: runs
+sandbox_workers: 4
+checkpoint_every: 25
+wandb: false
+
+injector: {mode: adversarial, functions_per_step: 16, group_size: 8, temperature: 1.0, max_tokens: 128, init_adapter: runs/warmup_injector/injector}
+detector: {group_size: 4, train_mutants: 64, train_clean: 16, temperature: 1.0, max_tokens: 32}
+lora: {r: 32, alpha: 64}
+optim: {lr: 1.0e-5, warmup_steps: 10, max_grad_norm: 1.0, micro_batch: 8, kl_beta: 0.01, clip_eps: 0.2, skip_zero_advantage: true}
+gate: {enabled: true}
+rewards: {partial_credit: false, invalid_penalty: -1.0, lambda_div: 0.1, lambda_sub: 0.05}
+pool: {enabled: true, every: 20, keep: 10, detector_data_fraction: 0.25, detector_weight: 0.3}
+curriculum: {enabled: false, threshold: 0.5, cap: 0.5}
+eval: {every: 25, real_dev_limit: 400, synthetic_limit: 400}
+vllm: {gpu_memory_utilization: 0.35, max_model_len: 4096, max_loras: 6, enforce_eager: false}

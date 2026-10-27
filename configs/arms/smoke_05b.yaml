@@ -1,0 +1,13 @@
+# GPU smoke test of the full loop on a crowded card (~6 GB free): Qwen2.5-Coder-0.5B, tiny batches.
+# Checks vLLM adapter hot-swapping, training, gate, pools, eval and checkpoints on real hardware.
+run_name: smoke_05b
+base_model: Qwen/Qwen2.5-Coder-0.5B-Instruct
+steps: 6
+checkpoint_every: 3
+sandbox_workers: 2
+injector: {functions_per_step: 4, group_size: 4}
+detector: {train_mutants: 16, train_clean: 4}
+optim: {micro_batch: 4}
+pool: {every: 2, keep: 2}
+eval: {every: 3, real_dev_limit: 60, synthetic_limit: 60}
+vllm: {gpu_memory_utilization: 0.12, max_loras: 2, enforce_eager: true}

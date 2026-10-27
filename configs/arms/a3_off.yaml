@@ -1,0 +1,3 @@
+# A3: validity gate off; only output-format parsing is enforced (Tier 1).
+run_name: a3_off
+gate: {enabled: false}

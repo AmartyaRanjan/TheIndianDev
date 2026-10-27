@@ -1,0 +1,3 @@
+# A7: curriculum on injector difficulty (Tier 3; definition in PLAN.md §4.7, to confirm).
+run_name: a7_curriculum
+curriculum: {enabled: true}

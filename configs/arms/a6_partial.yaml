@@ -1,0 +1,3 @@
+# A6: partial-credit detector reward (Tier 3).
+run_name: a6_partial
+rewards: {partial_credit: true}

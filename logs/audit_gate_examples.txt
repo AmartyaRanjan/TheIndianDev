@@ -1,0 +1,48 @@
+== Algorithm_10037_I | claimed=wrong_return | AST classifier=wrong_return | gate=ACCEPTED | location=return
+   original: return dp[0][n - 1]
+   mutant:   return None
+   tests on original: 6 passed, 0 failed | on mutant: 0 passed, 6 failed
+== Algorithm_10128_I | claimed=argument_swap | AST classifier=argument_swap | gate=ACCEPTED | location=call_arg
+   original: for i in range(1, n):
+   mutant:   for i in range(n, 1):
+   tests on original: 4 passed, 0 failed | on mutant: 1 passed, 3 failed
+== Algorithm_10446_I | claimed=type_conversion | AST classifier=type_conversion | gate=ACCEPTED | location=return
+   original: return list(buffer)
+   mutant:   return tuple(buffer)
+   tests on original: 8 passed, 0 failed | on mutant: 2 passed, 6 failed
+== Algorithm_10486_I | claimed=boundary_shift | AST classifier=boundary_shift | gate=REJECTED G6_equivalent | location=statement
+   original: def find_influencers(n: int, edges: List[Tuple[int, int]]) -> List[int]:
+   mutant:   def find_influencers(n: int, edges: List[Tuple[int, int]]) -> List[int + 1]:
+   tests on original: 9 passed, 0 failed | on mutant: 9 passed, 0 failed
+== Algorithm_10618_I | claimed=arithmetic_op | AST classifier=arithmetic_op | gate=ACCEPTED | location=statement
+   original: k = k % n  # To handle cases where k is larger than the array length
+   mutant:   k = k // n  # To handle cases where k is larger than the array length
+   tests on original: 5 passed, 0 failed | on mutant: 2 passed, 3 failed
+== Algorithm_10891_I | claimed=negation | AST classifier=negation | gate=ACCEPTED | location=return
+   original: return False
+   mutant:   return True
+   tests on original: 6 passed, 0 failed | on mutant: 5 passed, 1 failed
+== Algorithm_11430_I | claimed=variable_misuse | AST classifier=variable_misuse | gate=ACCEPTED | location=statement
+   original: reversed_words = words[::-1]  # reverse the list of words
+   mutant:   reversed_words = s[::-1]  # reverse the list of words
+   tests on original: 7 passed, 0 failed | on mutant: 0 passed, 7 failed
+== Algorithm_11533_I | claimed=boundary_shift | AST classifier=boundary_shift | gate=ACCEPTED | location=return
+   original: return [[matrix[j][i] for j in range(n)] for i in range(n)]
+   mutant:   return [[matrix[j][i - 1] for j in range(n)] for i in range(n)]
+   tests on original: 6 passed, 0 failed | on mutant: 2 passed, 4 failed
+== Algorithm_11707_I | claimed=comparison_op | AST classifier=comparison_op | gate=ACCEPTED | location=condition
+   original: if k == 0 or not data:
+   mutant:   if k >= 0 or not data:
+   tests on original: 8 passed, 0 failed | on mutant: 2 passed, 6 failed
+== Algorithm_12621_I | claimed=boolean_op | AST classifier=boolean_op | gate=ACCEPTED | location=condition
+   original: if current_row == 0 or current_row == num_rows - 1:
+   mutant:   if current_row == 0 and current_row == num_rows - 1:
+   tests on original: 7 passed, 0 failed | on mutant: 3 passed, 4 failed
+== Apps_13694_I | claimed=none_guard_omission | AST classifier=none_guard_omission | gate=ACCEPTED | location=statement
+   original: dp[i][j] = dp[i - 1][j] or dp[i - 1][j - arr[i - 1]]
+   mutant:   dp[i][j] = dp[i - 1][j]
+   tests on original: 9 passed, 0 failed | on mutant: 2 passed, 7 failed
+== Docs: Python310_31584_I | claimed=wrong_return | AST classifier=wrong_return | gate=REJECTED G2_size | location=None
+   original: return { / 'YIQ': yiq, / 'HLS': hls, / 'HSV': hsv / }
+   mutant:   return None
+   tests on original: 5 passed, 0 failed | on mutant: 0 passed, 5 failed

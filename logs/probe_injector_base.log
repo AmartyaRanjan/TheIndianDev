@@ -1,0 +1,9 @@
+256 samples: gate pass rate 0.000
+failures: G1_format=0.574, G2_size=0.164, G3_compile=0.160, G4_artifact=0.004, G5_label=0.098, G6_equivalent=0.000
+valid classes: {}
+functions with >=1 valid mutant: 0/32
+---- G2_size: '<type>arithmetic_op</type>\n<lines>7-10</lines>\n<new>     \n        if not scores:\n            raise ValueError("Invalid input")\n        elif k < 1 or k > len(scores):\n            raise ValueError("Invalid input")\n        sorted_scores = sorted(scores, reverse=True)\n        k_th_highest_score = sorted'
+---- G4_artifact: '<type>arithmetic_op</type>\n<lines>6-7</lines>\n<new>\n        if k < 1 or k > len(scores) + 1:  # Changed the boundary shift\n            raise ValueError("Invalid input")\n</new>'
+---- G5_label: 'boundary_shift\n2-4\nnew:\n<type>boundary_shift</type>\n<lines>2-4</lines>\n<new>\nsorted_scores = sorted(scores, reverse=True)\n</new>'
+
+[exited with code 0]
